@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender Admin</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="tooltip-top"><img src="images/Icon-weather-stars.svg" />
+        Try all of Moris’ Advanced Features -
+        <span class="month">1 Month Free Trial</span>
+        <span class="trial-free">Try For Free</span>
+    </div>
+    <div class="subtooltip"><img src="images/sub-tool-user-1.png" /><i class="fa-solid fa-chevron-down mx-2"></i>
+        <span class="welcome-name">Welcome, Harpreet</span>
+        <span class="meeting-time">Meeting in 20 mins with Ab..</span>
+        <img src="images/notification-dot.svg" class="notificatio-dot" />
+    </div>
+    <div class="d-flex flex-column p-3  sidebar-custom px-0">
+        <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none ms-2">
+       <img src="images/sidebar-small-logo.png" class="sidebar-small"/>
+       <img src="images/sidebar-logo.png" class="sidebar-open"/>
+            
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis"  aria-current="page">
+               <img src="images/sidebar-icon-1.svg" />
+              <span class="nav-item-text"> Create an Event </span>
+                </a>
+              </li>
+             
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+           <img src="images/sidebar-icon-2.svg" />
+               <span class="nav-item-text">Home</span> 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-3.svg" />
+                <span class="nav-item-text">My Calender </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-4.svg" />
+               <span class="nav-item-text"> Scheduled Meeting </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-5.svg" />
+                 <span class="nav-item-text">Schedule A Meeting</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-6.svg" />
+                <span class="nav-item-text"> Past Meetings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-7.png" />
+                 <span class="nav-item-text">Cancelled Meetings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-8.png" />
+                <span class="nav-item-text">My Account </span>
+            </a>
+          </li>
+        </ul>
+        <hr class="visually-hidden">
+       <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-9.svg" />
+                 <span class="nav-item-text">Settings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-10.svg" />
+                <span class="nav-item-text">My Account </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-11.svg" />
+                 <span class="nav-item-text">Subscription</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-12.svg" />
+                <span class="nav-item-text">Help &amp; Support </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+                <img src="images/sidebar-icon-13.png" />
+                <span class="nav-item-text">INDIA </span>
+            </a>
+          </li>
+        
+       </ul>
+      </div>
+    
+    <div class="container">
+        <div class="row gx-5 row-custom">
+            <div class="col-12 col-md-4">
+                <div class="welcome-card">
+                    <div class="first-row">
+                        <img src="images/welcome-user-1.png" />
+                        <h3 class="d-inline">Welcome <br/>Harpreet</h3>
+                    </div>
+                    <div class="plan">
+                        <span class="your-plan d-block">Your plan</span>
+                        <span class="free d-block">Free</span>
+                        Renewal on : <span class="ren-time"> May 14,2023 07:46 PM</span>
+                    </div>
+                    <div class="plan">
+                        <span class="your-plan d-block">Team Members</span>
+                        <span class="free d-block">10/10</span>
+                        <span class="ren-upgrade"> Upgrade to Invite Members</span>
+                    </div>
+                    <div class="seats">
+                        <div class="seats-available">Seats Available</div>
+                        <div class="seats-no">5/10</div>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-progress"></div>
+                    </div>
+                    <div class="create-team">Create Team <i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 center-sec">
+                <div class="main-clock">
+                    <img src="images/main-clock.png" />
+                </div>
+                <div class="week-section">
+                    <h3>This Week</h3>
+                    <div class="week-info">
+                        <i class="fa-solid fa-chevron-left me-1"></i>
+                        <div class="week-dates">
+                            <span class="day">MON</span>
+                            <span class="date">6</span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="week-dates">
+                            <span class="day">TUE</span>
+                            <span class="date">7</span>
+                            <span class="dot vis-hid"></span>
+                        </div>
+
+                        <div class="week-dates active">
+                            <span class="day">WED</span>
+                            <span class="date">8</span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="week-dates">
+                            <span class="day">THU</span>
+                            <span class="date">9</span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="week-dates">
+                            <span class="day">FRI</span>
+                            <span class="date">10</span>
+                            <span class="dot vis-hid"></span>
+                        </div>
+                        <div class="week-dates">
+                            <span class="day">SAT</span>
+                            <span class="date">11</span>
+                            <span class="dot vis-hid"></span>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right ms-2"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="meetings-section">
+                    <div class="meetings-tab">
+                        <span class="my-meetings d-block active">My Meetings</span>
+                        <span class="line d-block"></span>
+                        <span class="team-meetings d-block">TEAM MEETINGS</span>
+                    </div>
+                    <div class="meeting-list">
+                        <ul>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-1.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Nachiket Shah</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-2.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Alphabot India Pvt. Ltd.</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-3.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Chaitanya Kedia</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-4.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Rahul Joshi</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-3.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">ABC India Pvt. Ltd.</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+                <div class="meetings-section one">
+                    <div class="meetings-tab justify-content-between">
+                            My Team
+
+                            <span><img src="images/plus-icon.svg"/></span>
+                    </div>
+                    <div class="meeting-list">
+                        <ul>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-1.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Rahul Jha</span>
+                                        <br />
+                                        <span class="date-info">Business Development…</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="four-number">4</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-2.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Sana Tariq</span>
+                                        <br />
+                                        <span class="date-info">Key Account Manager</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="four-number">4</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-3.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Chaitanya Kedia</span>
+                                        <br />
+                                        <span class="date-info">Creative Designer</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="four-number">4</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-4.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Meghna Verma</span>
+                                        <br />
+                                        <span class="date-info">Creative Content Writer</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="four-number">4</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-3.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Ayesha Khan</span>
+                                        <br />
+                                        <span class="date-info">Social Media Manager</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="four-number">4</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-3.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Ayesha Khan</span>
+                                        <br />
+                                        <span class="date-info">Social Media Manager</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <span class="four-number">4</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+              </div>
+            
+            <div class="col-12 col-md-4 row g-4 ms-1">
+                <div class="col-6">
+                    <div class="schedule-meeting-card">
+                        <img src="images/schedule-meeting-icon.svg" />
+                        <div class="schedule-meeting-text">Schedule a Meeting</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="schedule-meeting-card">
+                        <img src="images/schedule-meeting-1.svg" />
+                        <div class="schedule-meeting-text">Scheduled Meetings</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="schedule-meeting-card">
+                        <img src="images/schedule-meeting-2.svg" />
+                        <div class="schedule-meeting-text">Scheduled Meetings</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="schedule-meeting-card">
+                        <img src="images/schedule-meeting-3.svg" />
+                        <div class="schedule-meeting-text">Cancelled Meetings</div>
+                    </div>
+                </div>
+<div class="col-12">
+    <div class="time-zone">
+        <span class="time-zone-info d-block mb-2"><img src="images/time-zone-icon.svg"/>YOUR TIME ZONE</span>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="(GMT+05:30) Kolkata, India (Asia/Kolkata)" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">CHANGE</span>
+          </div>
+          <span class="time-zone-info d-block"><img src="images/schedule-clock-icon.png"/>SELECTED TIME SLOT : <span class="text-danger">30 Minutes</span></span>
+     
+    </div>
+</div>
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+                <div class="meetings-section">
+                    <div class="meetings-tab">
+                        <span class="team-meetings d-block">WEBSITE MEETINGS</span>
+                    </div>
+                    <div class="meeting-list">
+                        <ul>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-1.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Nachiket Shah</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <img src = "images/cross-icon.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-2.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Alphabot India Pvt. Ltd.</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <img src = "images/calender-icon.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-3.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Chaitanya Kedia</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <img src = "images/pending-icon.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-4.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">Rahul Joshi</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <img src = "images/cross-icon.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-3.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">ABC India Pvt. Ltd.</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <img src = "images/tick-icon.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <div> <img src="images/meeting-user-3.png" />
+                                    </div>
+                                    <div>
+                                        <span class="name-info">ABC India Pvt. Ltd.</span>
+                                        <br />
+                                        <span class="date-info">Wed, 26 Apr 2023, 12:30 PM</span>
+
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <img src = "images/tick-icon.png"/>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           <div class="col-12 mt-5">
+            <div class="calender-section row">
+                <div class="col-3">
+                    <div class="calender-form">
+                        <div class="mb-3">
+                            <label for="" class="calender-form-label">Your Time Zone</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Asia/ Kolkatta</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+        
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="calender-form-label">Time Slot Interval (min)</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="30 min">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="calender-form-label">Time Slot Start-Time</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="09:00 am">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="calender-form-label">Time Slot End-Time</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="09:00 am">
+                          </div>
+                    
+                    </div>
+               
+                </div>
+                <div class="col-6 justify-content-center d-flex">
+
+                     <div class="calendar">
+        <div class="calendar-header">
+            <div>
+                <img src="images/icon-in-cal.svg" /> <span class="month-picker" id="month-picker">February</span>
+                <span id="year">2021</span>
+          
+            </div>
+            <div class="year-picker">
+                <span class="year-change" id="prev-year">
+                    <pre><</pre>
+                </span>
+                <!-- <span id="year">2021</span> -->
+                <span class="year-change" id="next-year">
+                    <pre>></pre>
+                </span>
+            </div>
+        </div>
+        <div class="calendar-body">
+            <div class="calendar-week-day">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="calendar-days"></div>
+        </div>
+        <div class="calendar-footer">
+            <div class="toggle">
+                <!-- <span>Dark Mode</span> -->
+                <div class="dark-mode-switch">
+                    <div class="dark-mode-switch-ident"></div>
+                </div>
+            </div>
+        </div>
+        <div class="month-list"></div>
+    </div>
+                </div>
+                <div class="col-3">
+                    <div class="calender-schedule">
+                        <div class="cal-schedule-heading">
+                            Saturday, 17 December 2023
+                        </div>
+                        <div class="cal-schedule-box">
+                            <span class="cal-schedule-time d-block">   <img src="images/clock-mini-icon.svg"/>9:00 am - 9:30 am</span>
+                         <div class="options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Available
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Not Available
+                                </label>
+                              </div>
+                         </div>
+                        </div>
+                        <div class="cal-schedule-box">
+                            <span class="cal-schedule-time d-block">   <img src="images/clock-mini-icon.svg"/>9:00 am - 9:30 am</span>
+                         <div class="options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                  Available
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4" checked>
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                  Not Available
+                                </label>
+                              </div>
+                         </div>
+                        </div>
+                        <div class="cal-schedule-box">
+                            <span class="cal-schedule-time d-block">   <img src="images/clock-mini-icon.svg"/>9:00 am - 9:30 am</span>
+                         <div class="options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault5">
+                                <label class="form-check-label" for="flexRadioDefault5">
+                                  Available
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault6" checked>
+                                <label class="form-check-label" for="flexRadioDefault6">
+                                  Not Available
+                                </label>
+                              </div>
+                         </div>
+                        </div>
+                        <div class="cal-schedule-box">
+                            <span class="cal-schedule-time d-block">   <img src="images/clock-mini-icon.svg"/>9:00 am - 9:30 am</span>
+                         <div class="options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault7">
+                                <label class="form-check-label" for="flexRadioDefault7">
+                                  Available
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault8" checked>
+                                <label class="form-check-label" for="flexRadioDefault8">
+                                  Not Available
+                                </label>
+                              </div>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
